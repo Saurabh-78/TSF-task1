@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TSF-Donate</title>
+    <script>
+        function fun(){
+            document.getElementById('name').value='';
+            document.getElementById('email').value='';
+            document.getElementById('mytext').value='';
+            }
+    </script>
+    <style>
+        input[type=submit] {
+            position: relative;
+            float: right;
+        }
+    </style>
+        
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/tsf.png" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+    
+        </ul>
+        <div class="nav-list rightnav v-class-resp">
+            <ul class="name-list">
+                <li><a href="#saurabh">Saurabh Nagare</a></li>
+            </ul>
+            
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+     
+    </nav>
+
+    <section class="background2 firstsection" id="home">
+        <div class="box-main">
+            <div class ="firsthalf">
+                <p class="text-big">The Sparks Foundation</p>
+                <p class="text-small">Task 1 - Payment Gateway Integration</p>
+                <div class="payment-button">
+                    <a href="#donate" class="btn">Donate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr>
+    <section class="donate" id="donate">
+    <h1 class="text-big">Mother Teresa Children's Fund</h1>
+    
+    <div class="container">
+        <div class="row">
+            <div class="donatebox">
+                <i class="fas fa-user" style="font-size: 380%; text-align: center;"></i>
+                <h2>"Helping hands are better than Praying Lips.”</h2>
+                <h3 class="t-small head">- Mother Teresa</h3>    
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H7d1v0gCwVjbaz" async> </script> </form>            </div>
+        </div>
+    </div>
+    </section>
+
+    <hr>
+    <section class="contact" id="contact">
+        <h2 class="t-big">Contact Us</h2>
+        <div class="myform" id="myform">
+           <input type="text" name="name" id="name" placeholder="Enter Your Name"> 
+           <input type="text" name="email" id="email" placeholder="Enter Your Email"> 
+           <textarea name="text" id="mytext" cols="30" rows="8" placeholder="Ellaborate your concern"> </textarea>
+           <button class="btn btn-dark" onclick="fun()">Submit</button>
+       </div>
+    </section>
+    <hr>
+
+    <section class="profile" id="saurabh">
+        
+        <div class="details donatebox2">
+        <h2 class="t-big">Saurabh Nagare</h2>
+        <img src="img/saurabh.jpeg" style="font-size: 38%; text-align: center;border-radius: 10px; max-width: fit-content; max-width: 33%;" alt="Saurabh">
+            <ul class="name_list">
+                <li><b>Mobile :</b>  9767844248</li>
+                <li><b>Email :</b> saurabhvnagare@gmail.com</li>
+                <li> <b>Linked-in :</b>Saurabh Nagare</li>
+                <li><b>Address :</b>Akola, Maharashtra</li>
+            </ul>        
+        </div>
+    </section>
+
+    <script src="js/resp.js"></script>
+
+</body>
+</html>

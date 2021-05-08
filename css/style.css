@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding: 0%;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    height: 69px;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.nav-list li a:hover{
+    color: grey;
+
+}
+
+.rightnav{
+    width: 30%;
+    display: flex;
+    font-size: 20px;
+    padding: 25px 50px;
+}
+
+.background{
+    background: rgba(20, 20,10, 0.7) url('../img/city2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.background2{
+    background: rgba(0, 0, 0, 0.7) url('../img/donate.jpg') ;
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+.firstsection{
+    height: 100vh;
+    
+}
+.box-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 50%;
+
+    
+}
+
+.firsthalf{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 10px 20px 20px;
+}
+
+.text-big{
+    font-size: 40px;
+    padding-top: 100px;
+    margin: auto;
+
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 10px;
+}
+
+
+.text-small{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: left;
+}
+
+.btn{
+    padding:8px 20px;
+    margin: 0 45%;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: skyblue;
+}
+
+.btn-dark{
+    max-width: 100px;
+    padding: 11px 20px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+    background: none;
+    color: lightseagreen;
+    cursor: pointer;
+    background-color: grey;
+}
+
+
+
+.secondsection{
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 130px;
+    
+}
+.paras{
+    text-align: center;
+    
+}
+
+.ourvalue{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 5   0px;
+
+    
+}
+
+.div1{
+    width: 40%;
+}
+.div2{
+    width: 20%;
+}
+.div3{
+    width: 20%;
+}
+
+
+.t-big{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.t-small{
+    font-size: 20px;
+    
+    text-align: center;
+}
+.higher{
+    font-size: 40px;
+    padding-top: 100px;
+}
+.contact{
+    height: 590px;
+    background-color: #f6f5f4;
+    padding: 100px 0;
+}
+.myform{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+}
+.myform input{
+    margin: 14px 0;
+    padding: 2px;
+    border: 2px solid grey;
+    border-radius: 40px;
+
+}
+.profile{
+    padding: 0 25% ;
+    max-width: 50%;
+    align-items: center;
+
+}
+
+
+.name_list{
+    position: relative;
+    list-style: none;
+    text-align: left; 
+    padding-left: 20%; 
+    /* padding-right: 19%; */
+    font-size: 20px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 10%;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+@media only screen and (max-width: 640px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transform: all 0.3s ease-out;
+        height: 449px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .ourvalue{
+        flex-direction: column;
+        align-items: left;
+        
+    }
+    .secondsection{
+        height: 800px;
+    }
+    
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 70px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+
+.donatebox
+{
+  background-color: rgb(0,0,0,0.6);
+  border-radius: 30px;
+  padding: 5%;
+  text-align: center;
+  color: #fff;
+  margin: 15%;
+}
+.donatebox h1
+{
+  text-align: center;
+  font-size: 200%;
+}
+.donatebox .fa-user
+{
+  margin-bottom: 3px;
+}
+
+
+.donatebox2
+{
+  background-color: rgb(242, 237, 250);
+  border: gray solid;
+  border-radius: 20px;
+  padding: 5%;
+  text-align: center;
+  color:gray;
+  margin: 15%;
+}
+.donatebox2 li{
+    padding-top: 10px;
+}
+.donatebox2 h1
+{
+  text-align: center;
+  font-size: 200%;
+}
+.donatebox2 .fa-user
+{
+  margin-bottom: 3px;
+}
